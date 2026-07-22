@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 30px 20px 80px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    max-width: 800px;
+    margin: 60px auto 0;
+    text-align: center;
+}
+
+.eyebrow {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 54px;
+}
+
+.hero-description {
+    max-width: 700px;
+    margin: 20px auto 30px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.primary-button {
+    background-color: white;
+    color: #003366;
+}
+
+.secondary-button {
+    border: 2px solid white;
+    color: white;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
