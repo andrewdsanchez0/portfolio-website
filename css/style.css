@@ -452,6 +452,55 @@ footer p {
     border: 1px solid #d9dde4;
 }
 
+.contact-section {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 30px 110px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    background: white;
+    border: 1px solid #dde1e7;
+}
+
+.contact-card h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 28px;
+}
+
+.contact-card p {
+    color: #586477;
+    margin-bottom: 30px;
+}
+
+.contact-button {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 12px 20px;
+    border: 2px solid #172033;
+    border-radius: 4px;
+    color: #172033;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: #172033;
+    color: white;
+}
+
 @media (max-width: 800px) {
     .navbar {
         align-items: flex-start;
@@ -523,6 +572,10 @@ footer p {
 
     .resume-frame {
     height: 600px;
+    }
+
+    .contact-grid {
+    grid-template-columns: 1fr;
     }
 
 }
