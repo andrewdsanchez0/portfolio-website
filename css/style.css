@@ -384,6 +384,74 @@ footer p {
     color: #aeb9ca;
 }
 
+.resume-intro {
+    padding-bottom: 90px;
+}
+
+.resume-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 35px;
+}
+
+.resume-summary {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 30px 110px;
+}
+
+.resume-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.resume-summary-card {
+    min-height: 300px;
+    padding: 34px;
+    background-color: white;
+    border: 1px solid #dde1e7;
+}
+
+.resume-summary-card h2 {
+    margin: 0 0 16px;
+    font-size: 25px;
+    line-height: 1.25;
+}
+
+.resume-summary-card p {
+    color: #586477;
+}
+
+.resume-document-section {
+    padding: 100px 30px;
+    background-color: white;
+}
+
+.resume-document-content {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.resume-document-content h2 {
+    margin: 0 0 18px;
+    font-size: 40px;
+}
+
+.resume-document-content > p {
+    max-width: 700px;
+    color: #586477;
+    font-size: 18px;
+}
+
+.resume-frame {
+    width: 100%;
+    height: 850px;
+    margin-top: 40px;
+    border: 1px solid #d9dde4;
+}
+
 @media (max-width: 800px) {
     .navbar {
         align-items: flex-start;
@@ -440,4 +508,21 @@ footer p {
     .projects-cta h2 {
     font-size: 32px;
     }
+
+    .resume-summary-grid {
+    grid-template-columns: 1fr;
+    }
+
+    .resume-summary-card {
+    min-height: auto;
+    }
+
+    .resume-document-content h2 {
+    font-size: 32px;
+    }
+
+    .resume-frame {
+    height: 600px;
+    }
+
 }
