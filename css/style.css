@@ -18,6 +18,8 @@ a {
     color: inherit;
 }
 
+/* Navigation */
+
 .site-header {
     background-color: #f7f7f5;
     border-bottom: 1px solid #d9dde4;
@@ -51,6 +53,8 @@ a {
 .nav-links a:hover {
     text-decoration: underline;
 }
+
+/* Homepage Hero */
 
 .hero {
     display: flex;
@@ -96,6 +100,8 @@ a {
     margin-top: 36px;
 }
 
+/* Buttons */
+
 .button {
     display: inline-block;
     padding: 13px 22px;
@@ -118,6 +124,8 @@ a {
 .button:hover {
     opacity: 0.82;
 }
+
+/* Homepage Focus Section */
 
 .focus-section,
 .projects-preview {
@@ -172,6 +180,8 @@ a {
     color: #586477;
 }
 
+/* Homepage Projects Preview */
+
 .projects-preview {
     border-top: 1px solid #d9dde4;
 }
@@ -221,6 +231,8 @@ a {
     text-decoration: underline;
 }
 
+/* Call to Action Sections */
+
 .cta-section {
     padding: 110px 30px;
     background-color: white;
@@ -239,17 +251,7 @@ a {
     margin-top: 20px;
 }
 
-footer {
-    padding: 28px 30px;
-    background-color: #172033;
-    color: white;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
-}
+/* Interior Page Introductions */
 
 .page-intro {
     max-width: 1180px;
@@ -271,6 +273,8 @@ footer p {
     font-size: 20px;
 }
 
+/* About Page */
+
 .about-section {
     max-width: 1180px;
     margin: 0 auto;
@@ -291,6 +295,8 @@ footer p {
     color: #586477;
     font-size: 17px;
 }
+
+/* Projects Page */
 
 .projects-section {
     max-width: 1180px;
@@ -384,6 +390,8 @@ footer p {
     color: #aeb9ca;
 }
 
+/* Resume Page */
+
 .resume-intro {
     padding-bottom: 90px;
 }
@@ -452,6 +460,8 @@ footer p {
     border: 1px solid #d9dde4;
 }
 
+/* Contact Page */
+
 .contact-section {
     max-width: 1180px;
     margin: 0 auto;
@@ -468,7 +478,7 @@ footer p {
     display: flex;
     flex-direction: column;
     padding: 36px;
-    background: white;
+    background-color: white;
     border: 1px solid #dde1e7;
 }
 
@@ -479,8 +489,8 @@ footer p {
 }
 
 .contact-card p {
-    color: #586477;
     margin-bottom: 30px;
+    color: #586477;
 }
 
 .contact-button {
@@ -500,6 +510,71 @@ footer p {
     background-color: #172033;
     color: white;
 }
+
+/* Professional Footer */
+
+.site-footer {
+    padding: 50px 30px;
+    background-color: #172033;
+    color: white;
+}
+
+.footer-content {
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content h3 {
+    margin: 0 0 8px;
+    font-size: 26px;
+}
+
+.footer-content > p {
+    margin: 0;
+    color: #c7cfdb;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #5d687a;
+    border-radius: 50%;
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.social-links a:hover {
+    background-color: white;
+    border-color: white;
+    color: #172033;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    margin-top: 0;
+    color: #aeb7c5;
+    font-size: 14px;
+}
+
+/* Mobile Formatting */
 
 @media (max-width: 800px) {
     .navbar {
@@ -538,44 +613,55 @@ footer p {
     }
 
     .page-intro h1 {
-    font-size: 40px;
+        font-size: 40px;
     }
 
     .about-content {
-    grid-template-columns: 1fr;
-    gap: 35px;
+        grid-template-columns: 1fr;
+        gap: 35px;
     }
 
     .projects-grid {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .project-card {
-    min-height: 350px;
+        min-height: 350px;
     }
 
     .projects-cta h2 {
-    font-size: 32px;
+        font-size: 32px;
     }
 
     .resume-summary-grid {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .resume-summary-card {
-    min-height: auto;
+        min-height: auto;
     }
 
     .resume-document-content h2 {
-    font-size: 32px;
+        font-size: 32px;
     }
 
     .resume-frame {
-    height: 600px;
+        height: 600px;
     }
 
     .contact-grid {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
+    .site-footer {
+        padding: 45px 20px;
+    }
+
+    .footer-content h3 {
+        font-size: 24px;
+    }
+
+    .social-links {
+        gap: 18px;
+    }
 }
